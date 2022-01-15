@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+# [RibSeg Dataset and Strong Point Cloud Baselines for Rib Segmentation from CT Scans](https://arxiv.org/abs/2109.09521)
 
-You can use the [editor on GitHub](https://github.com/punkq/punkq.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Insight
+Complicated 3D structures in medical images can be represented as point clouds to learn and be predicted.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Dataset
+1. Ribfrac
+2. RibSeg (proposed)
 
-### Markdown
+## Method
+1. They Manually labels the point cloud of Ribfrac
+2. Build a pointnet++ to predict the points labels
+3. Post-process to reconstruct the voxel predictions
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Experiment
+Compare their method with pointnet++ and its deviants
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# [PC-U net: Learning to jointly reconstruct and segment the cardiac walls in 3D from CT data](https://arxiv.org/pdf/2008.08194)
 
-- Bulleted
-- List
+## Insight
+Using a point cloud as an intermediate representation for voxel semantic segmentation is feasible.
 
-1. Numbered
-2. List
+## Dataset
+3D cardiac CT
 
-**Bold** and _Italic_ and `Code` text
+## Method
+They plug a PointNet in a 3D mask segmentation network.
 
-[Link](url) and ![Image](src)
-```
+## Experiment
+Compare their method with PointOutNet and PointNet deviants.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+# [Rethinking Pulmonary Nodule Detection in Multi-view 3D CT Point Cloud Representation](https://link.springer.com/chapter/10.1007/978-3-030-87589-3_9)
 
-### Jekyll Themes
+## Insight
+Using a point cloud as an intermediate representation for 3D voxel detection is ok, but not as good as existing methods.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/punkq/punkq.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Dataset
+LUNA16
 
-### Support or Contact
+## Method
+1. They convert 3D voxel into point cloud and then rotate them(data augmentation).
+2. Apply a point cloud detection network on rotated data.
+3. Fuse the detection results.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Experiment
+Compare their method with PointOutNet and PointNet deviants.
