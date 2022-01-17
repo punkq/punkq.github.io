@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from tkinter.ttk import Notebook
+import posixpath
 
 def write_category(cat):
     strings = []
@@ -11,14 +11,16 @@ def write_category(cat):
         if os.path.isfile(os.path.join(cat_path, name)):
             if name.endswith('.md'): 
                 file_path = os.path.join(cat_path, name)
-                file_title = name[:-3]
+                file_path = file_path.replace(os.sep, posixpath.sep)
+                file_title = name[:-3].capitalize().replace('_', ' ')
                 strings.append('- [{}]({})'.format(file_title, file_path))
         else:
-            strings.append('- {}'.format(name))
+            strings.append('- {}'.format(name.capitalize().replace('_', ' ')))
             for subname in os.listdir(os.path.join(cat_path, name)):
                 if not subname.endswith('.md'): continue
                 file_path = os.path.join(cat_path, name, subname)
-                file_title = subname[:-3]
+                file_path = file_path.replace(os.sep, posixpath.sep)
+                file_title = subname[:-3].capitalize().replace('_', ' ')
                 strings.append('  - [{}]({})'.format(file_title, file_path))
 
     strings.append('')
