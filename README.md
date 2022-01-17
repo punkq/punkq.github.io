@@ -4,7 +4,8 @@
 - [phycology](docs\interests\phycology.md)
 
 ## Projects
-- [22_01_15_paper_reading](docs\projects\22-01-15-paper_reading.md)
+- voxel_point_cloud
+  - [22_01_15_paper_reading](docs\projects\voxel_point_cloud\22_01_15_paper_reading.md)
 
 ## Skills
 - code
