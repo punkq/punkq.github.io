@@ -5,7 +5,7 @@
 
 ## Projects
 - voxel_point_cloud
-  - [22_01_15_paper_reading](docs\projects\voxel_point_cloud\22_01_15_paper_reading.md)
+  - [22_01_15_paper_reading](docs/projects/voxel_point_cloud/22_01_15_paper_reading.md)
 
 ## Skills
 - code
