@@ -1,3 +1,4 @@
+theme: jekyll-theme-slate
 title: PunkQ's notebook
 plugins:
   - jekyll-relative-links
@@ -18,4 +19,3 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
-theme: jekyll-theme-cayman
