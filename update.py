@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+from tkinter.ttk import Notebook
 
 def write_category(cat):
     strings = []
@@ -24,7 +25,7 @@ def write_category(cat):
     return '\n'.join(strings)
 
 md = []
-title = '# [Wellcome](#top)'
+title = '# [PunkQ\'s Notebook](#top)'
 md.append(title)
 
 cats = os.listdir('docs')
@@ -33,6 +34,6 @@ for cat in cats:
 
 md.append('### [Back to top](#top)')
 
-with open('README.md', 'w') as  f:
+with open('index.md', 'w') as  f:
     f.write('\n'.join(md))
 
