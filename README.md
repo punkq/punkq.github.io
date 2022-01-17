@@ -4,7 +4,7 @@
 - [phycology](docs\interests\phycology.md)
 
 ## Projects
-- [22-01-15-paper_reading](docs\projects\22-01-15-paper_reading.md)
+- [22_01_15_paper_reading](docs\projects\22-01-15-paper_reading.md)
 
 ## Skills
 - code
