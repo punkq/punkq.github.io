@@ -5,7 +5,7 @@
 
 
 ## Projects
-- [22-01-15-paper_reading](docs\projects\22-01-15-paper_reading.md)
+- [22-01-15-paper_reading](docs/projects/22-01-15-paper_reading.md)
 
 
 ## Skills
