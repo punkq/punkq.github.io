@@ -20,6 +20,7 @@ def write_category(cat):
                 file_title = subname[:-3]
                 strings.append('  - [{}]({})'.format(file_title, file_path))
 
+    strings.append('\n')
     return '\n'.join(strings)
 
 md = []
