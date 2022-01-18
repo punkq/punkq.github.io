@@ -8,7 +8,7 @@ Complicated 3D structures in medical images can be represented as point clouds t
 2. RibSeg (proposed)
 
 ## Method
-1. They Manually labels the point cloud of Ribfrac
+1. They Manually label the point cloud of Ribfrac and name it as RibSeg
 2. Build a pointnet++ to predict the points labels
 3. Post-process to reconstruct the voxel predictions
 
@@ -33,15 +33,16 @@ Compare their method with PointOutNet and PointNet deviants.
 # [Rethinking Pulmonary Nodule Detection in Multi-view 3D CT Point Cloud Representation](https://link.springer.com/chapter/10.1007/978-3-030-87589-3_9)
 
 ## Insight
-Using a point cloud as an intermediate representation for 3D voxel detection is ok, but not as good as existing methods.
+Using point cloud as an intermediate representation for 3D voxel detection is ok, but not as good as existing methods.
 
 ## Dataset
 LUNA16
 
 ## Method
-1. They convert 3D voxel into point cloud and then rotate them(data augmentation).
-2. Apply a point cloud detection network on rotated data.
-3. Fuse the detection results.
+1. They learn to convert 3D voxel into point cloud 
+2. Rotate point clouds to achieve data augmentation
+2. Apply a point cloud detection network on rotated data
+3. Fuse the detection results
 
 ## Experiment
-Compare their method with PointOutNet and PointNet deviants.
+They compare their method with different methods on LUNA16, and their method is not competitive as other methods.

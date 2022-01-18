@@ -2,6 +2,11 @@
 import os
 import posixpath
 
+def titlize(title):
+    words = title.split('_')
+    words = [w.capitalize() for w in words]
+    return ' '.join(words)
+
 def write_category(cat):
     strings = []
     strings.append('## {}'.format(cat.capitalize()))
@@ -12,15 +17,14 @@ def write_category(cat):
             if name.endswith('.md'): 
                 file_path = os.path.join(cat_path, name)
                 file_path = file_path.replace(os.sep, posixpath.sep)
-                file_title = name[:-3].capitalize().replace('_', ' ')
-                strings.append('- [{}]({})'.format(file_title, file_path))
+                strings.append('- [{}]({})'.format(titlize(name[:-3]), file_path))
         else:
-            strings.append('- {}'.format(name.capitalize().replace('_', ' ')))
+            strings.append('- {}'.format(titlize(name)))
             for subname in os.listdir(os.path.join(cat_path, name)):
                 if not subname.endswith('.md'): continue
                 file_path = os.path.join(cat_path, name, subname)
                 file_path = file_path.replace(os.sep, posixpath.sep)
-                file_title = subname[:-3].capitalize().replace('_', ' ')
+                file_title = titlize(subname[:-3])
                 strings.append('  - [{}]({})'.format(file_title, file_path))
 
     strings.append('')
@@ -31,6 +35,7 @@ title = '# [PunkQ\'s Notebook](#top)'
 md.append(title)
 
 cats = os.listdir('docs')
+cats.reverse()
 for cat in cats:
     md.append(write_category(cat))
 
