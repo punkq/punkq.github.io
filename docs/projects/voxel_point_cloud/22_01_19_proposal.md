@@ -1,7 +1,7 @@
 <!--
  * @Author: PunkQ
  * @Date: 2022-01-19 01:37:13
- * @LastEditTime: 2022-01-19 02:35:49
+ * @LastEditTime: 2022-01-19 02:48:55
  * @LastEditors: PunkQ
  * @Description: brief summary of our plan
  * @FilePath: /punkq.github.io/docs/projects/voxel_point_cloud/22_01_19_proposal.md
@@ -19,6 +19,11 @@ Point representations outperform volume representations on computational efficie
 2. Sample points on 3D images given the learned map (dense voxels to sparse points)
 3. Apply point-based learning for detection (point cloud representation)
 
+![overview](img/proposal.jpg)
+## Open-source methods
+
+ - [Point-UNet](https://github.com/VinAIResearch/Point-Unet): (MICCAI 2021) Using point-based method for 3D segmentation 
+ - [nnDetection](https://github.com/MIC-DKFZ/nnDetection): (MICCAI 2021) A robust pipeline proposed by the team who made [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) 
 ## Datasets
 
 | Task | Movitation |
@@ -26,7 +31,3 @@ Point representations outperform volume representations on computational efficie
 | [RibFrac](https://github.com/MIC-DKFZ/nnDetection/blob/main/projects/Task020_RibFrac/README.md) |A new dataset and not hard to outperform existing methods |
 |[Pancreas](https://github.com/MIC-DKFZ/nnDetection/blob/main/projects/Task001_Decathlon/README.md)| Current open-source methods [Point-UNet](https://github.com/VinAIResearch/Point-Unet) and [nnDetection](https://github.com/MIC-DKFZ/nnDetection) are conducted test on this dataset |
 
-## Availabel codes
-
- - [Point-UNet](https://github.com/VinAIResearch/Point-Unet): (MICCAI 2021) Using point-based method for 3D segmentation 
- - [nnDetection](https://github.com/MIC-DKFZ/nnDetection): (MICCAI 2021) A robust pipeline proposed by the team who made [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) 
