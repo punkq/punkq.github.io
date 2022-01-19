@@ -1,7 +1,7 @@
 <!--
  * @Author: PunkQ
  * @Date: 2022-01-19 01:37:13
- * @LastEditTime: 2022-01-19 02:48:55
+ * @LastEditTime: 2022-01-19 09:27:14
  * @LastEditors: PunkQ
  * @Description: brief summary of our plan
  * @FilePath: /punkq.github.io/docs/projects/voxel_point_cloud/22_01_19_proposal.md
@@ -19,11 +19,15 @@ Point representations outperform volume representations on computational efficie
 2. Sample points on 3D images given the learned map (dense voxels to sparse points)
 3. Apply point-based learning for detection (point cloud representation)
 
-![overview](img/proposal.jpg)
+![overview](img/proposal.png)
 ## Open-source methods
 
  - [Point-UNet](https://github.com/VinAIResearch/Point-Unet): (MICCAI 2021) Using point-based method for 3D segmentation 
  - [nnDetection](https://github.com/MIC-DKFZ/nnDetection): (MICCAI 2021) A robust pipeline proposed by the team who made [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) 
+
+ - [RibSeg(MICCAI 2021)](https://github.com/M3DV/RibSeg)
+
+ - [Ponit Cloud Segmentation(MICCAI 2019)](https://github.com/fabianbalsiger/point-cloud-segmentation-miccai2019)
 ## Datasets
 
 | Task | Movitation |
